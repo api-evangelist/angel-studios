@@ -19,5 +19,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/angel-studios-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/angel-studios-domain-security.yml
 - type: Website
   url: https://www.hiive.com/securities/angel-studios-stock
