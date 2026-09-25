@@ -1,0 +1,130 @@
+generated: '2026-09-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 9
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - security
+  - support
+  - website
+hosts:
+- host: account.shop.angel.com
+  found_by:
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: angel.com
+  role: identity
+  relation: own
+- host: api.angel.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: angel.com
+  role: api
+  relation: own
+- host: clarity.com
+  found_by:
+  - pointer
+  types:
+  - Security
+  serves: []
+  registrable_domain: clarity.com
+  role: security
+  relation: other-domain
+- host: invest.angel.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: angel.com
+  role: other
+  relation: own
+- host: ir.angel.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: angel.com
+  role: other
+  relation: own
+- host: link.angel.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: angel.com
+  role: other
+  relation: own
+- host: privacy.angel.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: angel.com
+  role: other
+  relation: own
+- host: shop.angel.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: angel.com
+  role: other
+  relation: own
+- host: support.angel.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: angel.com
+  role: support
+  relation: own
+- host: www.angel.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  - Login
+  - Blog
+  - Website
+  serves:
+  - hosting
+  vendor: vercel
+  registrable_domain: angel.com
+  role: website
+  relation: own

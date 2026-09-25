@@ -1,27 +1,88 @@
 aid: angel-studios
+
 name: Angel Studios
-description: 'Angel Studios is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://images.angelstudios.com/image/upload/c_fill,f_auto,h_630,q_auto,w_1200/v1778524911/angel-studios/seo/angel-opengraph.png
+
+description: 'Angel Studios operates a streaming platform that offers uplifting movies and TV shows for families and individuals seeking inspirational content. The service combines a subscription-based model with a community-driven guild where members can support filmmakers, vote on projects, and access exclusive content. Angel Studios emphasizes purpose-driven storytelling, providing a diverse library across genres such as drama, comedy, documentary, and faith-based programming, while also offering theatrical releases and a marketplace for merchandise.'
+
 url: https://raw.githubusercontent.com/api-evangelist/angel-studios/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Streaming
+- Media
+- Community
+- Faith
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/angel-studios-clarity-security.txt
+- type: Security
+  url: https://clarity.com/vdp
+- type: LLMsTxt
+  url: llms/angel-studios-llms.txt
+- type: SecurityTxt
+  url: well-known/angel-studios-ir-security.txt
+- type: WellKnown
+  url: well-known/angel-studios-well-known.yml
+- type: Hosts
+  url: hosts/angel-studios-hosts.yml
+- type: Vendors
+  url: vendors/angel-studios-vendors.yml
+- type: TermsOfService
+  url: https://www.angel.com/legal/terms-of-use
+- type: Support
+  url: https://support.angel.com/hc
+- type: PrivacyPolicy
+  url: https://www.angel.com/legal/privacy
+- type: Pricing
+  url: https://www.angel.com/guild/pricing
+- type: Newsroom
+  url: https://www.angel.com/press
+- type: Login
+  url: https://www.angel.com/login
+- type: Blog
+  url: https://www.angel.com/blog
 - type: VulnerabilityDisclosure
   url: security/angel-studios-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/angel-studios-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/angel-studios-stock
+  url: https://www.angel.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
